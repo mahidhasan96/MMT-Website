@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins', sans-serif ;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: green;
+    font-weight: bold;
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: royalblue;
+    padding-top: 6px;
+}
+h6{
+    color: #d8d8d8;
+}
+
+#logo{
+    width: 70px;
+    height: 70px;
+    
+}
+.navbar{
+    font-size: 12px;
+   
+    
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active{
+    color: coral;
+}
+
+#navbarSupportedContent > ul{
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    padding-top: 7px ;
+    border: 2px seagreen;
+    
+}
+
+
+.carousel-inner{
+  background-image: url(images/bacground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+
+  
+}
+
+.inner-banner{
+   text-align: center;
+   position:relative;
+   top: 36%;
+   
+   
+}
+.inner-banner span{
+    color: red;
+}
+.btn{
+    background-color: #3bb300;
+    color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s ease;
+    
+}
+
+.inner-shop img{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+.inner-shop{
+    height: 230px;
+    display: flex;
+    margin-top: 50px;
+    padding-left: 20px;
+    background-color:  #e6e6ff;
+
+    
+    
+}
+.alert{
+    margin-top: 3rem;
+    
+}
+.shop-text{
+    padding-top: 5rem;
+    margin-left: 20px;
+    text-align: center;
+}
+.inner-cart{
+    text-align: center;
+    padding-top: 20px;
+    box-shadow: 5px 5px 15px gray;
+    
+    
+}
+.item{
+    border: 2px solid green;
+}
