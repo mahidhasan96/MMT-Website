@@ -179,17 +179,357 @@ h6{
     margin: 50px 0;
 }
 
+.title_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 6rem;
+    padding: 2rem 0 ;
+    background-color:#808080;
+}
+.section_title:not(:last-child){
+    margin: 1.5rem;
+}
+.section_title{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.section_title{
+    font-size: 1.9rem;
+    font-weight: inherit;
+
+}
+.section_title:hover .primary_title,
+.section_title:hover span .dot,
+.section_title:hover span .dot::before {
+   opacity: 1;
+}
+.section_title .primary_title{
+    opacity: 0.6;
+    padding-left: 0.5rem;
+    transition: opacity 0.3s ease-in-out ;
+    color: rebeccapurple;
+}
+.primary_title{
+    font-size: 20px;
+   
+}
+  .dot{
+    opacity: 1;
+    padding: 5px;
+    position: relative;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+}
+
+
+.section_title:hover .dot{
+    background-color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.section_title :active .dot{
+    opacity: 1;
+}
+
+.section_title :active .dot::before{
+    opacity: 1;
+
+
+}
+.section_title :active .primary_title{
+    opacity: 1;
+}
+
+
+.product{
+    position: relative;
+    text-align: center;
+}
+
+.product ul{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    left: 50%;
+    width: 14rem;
+    height: 4rem;
+    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0.7);
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(.5);
+    transition:all 0.5s ease-in-out;
+    
+}
+
+
+.product:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+ .product ul a i{
+     width: 40px;
+     height: 40px;
+     background-color: red;
+     cursor: pointer;
+     transition: 0.3s;
+     color:white;
+     padding-top: 10px;
+ }
+
+ .product ul a{
+     text-decoration: none;
+ }
+
+ .product ul a i:hover {
+    background-color: black;
+    color: red;
+    
+
+}
+.product ul i:hover::before{
+    width: 126%;
+    height: 126%;
+    border-top: 3px solid orange;
+    border-left: 3px solid orange;
+    opacity: 1;
+
+
+}
+.product ul i:hover::before{
+    width: 126%;
+    height: 126%;
+    border-bottom: 3px solid orange;
+    border-right: 3px solid orange;
+    opacity: 2;
+    
+
+}
+@media only screen and(max-width: 568px){
+    .title_container{
+        flex-direction: column;
+    }
+} 
+    
+@media only screen and(max-width: 760px){
+    .product{
+        columns: lg -8px;
+    }
+} 
+   
+.section_title:not(:last-child){
+    margin: 0 0 1.3rem;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+
+}
+.product_header{
+    height: 25rem;
+    padding: .5rem 0;
+    text-align: center;
+}
+.product_header img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.product-footer{
+    padding: 1rem 0;
+}
+.product-footer .product-price{
+    padding-bottom: 1rem;
+}
+.product-price h3{
+    padding: 1rem 0;
+}
+.rating i{
+    color: yellowgreen;
+}
+.product_price button{
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 1rem 0;
+    border:  1px solid black;
+    color: black;
+    cursor: pointer;
+
+}
+.product_price button:focus{
+    outline: none;
+}
+.product_price button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
 
 
 
+.devide{
+    margin-bottom: 50px;
+}
+
+.plane{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    background-color: gray;
+    padding: 5px;
+    border: 1px solid palegoldenrod;
+   
+    
+  }
+.plane i{
+    position: relative;
+    top: 42%;
+    left: 40%;
+    font-size: 25px;
+    transition-duration: 1000ms;
+    transition-timing-function: ease;
+}
+.plane:hover i{
+    transform: rotate(180deg);
 
 
+}
+.sub{
+    color: #282C22;
+    padding-top: 10px;
+}
+.subsection{
+    background-color: #F1F1F1;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
 
+.myskill{
+    margin-bottom: 50px;
+}
+.OuterBox{
+    width: 100%;
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: black;
+}
 
+.InnerBox{
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #1fe6ff, #673AB7);
+    animation: html 4s ease-in-out forwards;
+}
+.OuterBox2{
+    width: 100%;
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: black;
+}
 
+.InnerBox2{
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #1fe6ff, #673AB7);
+    animation: css 4s ease-in-out forwards;
+}
+.OuterBox3{
+    width: 100%;
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: black;
+}
 
+.InnerBox3{
+    width:75%;
+    height: 30px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #1fe6ff, #673AB7);
+    animation: boots 4s ease-in-out forwards;
+}
+.OuterBox4{
+    width: 100%;
+    height: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: black;
+}
 
+.InnerBox4{
+    width: 50%;
+    height: 30px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #1fe6ff, #673AB7);
+    animation: java 4s ease-in-out forwards;
+}
 
+.myskill h1{
+    text-align: center;
+    border-bottom: 5px solid gray;
+}
 
-
-
+span{
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: bold;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+    
+}
+@keyframes boots {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+    
+}
+@keyframes java {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+    
+}
