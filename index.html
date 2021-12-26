@@ -723,7 +723,134 @@
         </div>
       </div>
     
-  
+    <div class="container">
+      <div class="clients">
+        client Review
+      </div>
+     <div class="row bg">
+       <div class="col-md-4 clint">
+         <div class="customer">
+           <img src="images/client/client.jpg" alt="">
+           <p>this cient just awesome </p>
+         </div>
+       </div>
+       <div class="col-md-4 clint">
+        <div class="customer">
+          <img src="images/client/client3.jpg" alt="">
+          <p>this cient just awesome </p>
+        </div>
+      </div>
+      <div class="col-md-4 clint">
+        <div class="customer">
+          <img src="images/client/client2.jpg" alt="">
+          <p>this cient just awesome </p>
+        </div>
+      </div>
+     </div>
+    </div>
+<!--tem member sectaion-->
+
+    <div class="container">
+      <div class="member">
+        tem members
+        </div>
+          <div class="tem tmr">
+            <div class="row">
+              <div class="col-md-4 tems">
+                <a href="https://www.facebook.com/mahid.hasan.35"><img src="images/TEM/mahid.jpg" alt=""></a>
+                <p>MD. MAHID HASAN. <br>Id.21190101045 <br> SECTION-9A </p>
+                
+              </div>
+              
+                <div class="col-md-4 tems">
+                   <a href="https://www.facebook.com/md.shihab.869700"><img src="images/TEM/morshed.jpg" alt=""></a>
+                  <p>MOESHED JAHAN SHIHAB<br>Id.21190101043 <br> SECTION-9A </p>
+                </div>
+             
+              
+                <div class="col-md-4 tems">
+                 <a href="https://www.facebook.com/profile.php?id=100008331066167"><img src="images/TEM/tonmoy.jpg" alt=""></a> 
+                  <p>BADIUL ALAM TANMOY<br>Id.21190101028 <br> SECTION-9A </p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--contact sectioin-->
+    <div class="container">
+      <div class="row cont">
+        <div class="col-md-6 contact">
+          <div class="contact">
+            <img src="images/contact.png" alt="">
+            <h3>CONTACT US WHEN YOU NEED  SOME DIFFERENT PRODUCTS</h3>
+          </div>
+        </div>
+        <div class="col-md-6 from">
+          <form action="insert.php" method="POST">
+             <table > 
+               
+
+                <tr>
+                    <td>
+                      Name:
+                    </td>
+                    <td>
+                      <input type="text" placeholder="Name" name="username" required>
+                    </td>
+                </tr>
+                <tr>
+                   <td>
+                     Password:
+                   </td>
+                   <td> <input type="password" placeholder="Password" name="password" required> </td>
+                </tr>
+                <tr>
+                  <td>
+                    Email:
+                  </td>
+                  <td>
+                    <input type="Email" placeholder="Enter Your Email" value="Email" required>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Phone No :
+                  </td>
+                  <td>
+                    <select name="phoneCode" id="" required>
+                      <option selected hidden value=""></option>
+                      <option value="+88">+88</option>
+                      <option value="+88">+88</option>
+                      <input type="phone" name="phone" placeholder="01******" required>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Gender:
+                  </td>
+                  <td>
+                    <input type="radio" name="Gender" value="m" id="" required>Male
+                    <input type="radio" name="Gender" value="f" id="" required>Female
+                  </td>
+                </tr>
+                
+                
+                <tr>
+                  <td>
+                    <input type="SUBMIT" value="submit">
+                  </td>
+                </tr>
+             </table>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+
+
 <script>
 
    let numb = document.getElementById('numb');
@@ -738,23 +865,10 @@
 
      }, 40)
 </script>
- <script>
-
-  let numb2 = document.getElementById('numb2');
-   let counter = 0;
-   setInterval(() => {
-     if(counter == 80){
-       clearInterval();
-     }else{
-       counter += 1;
-       numb.innerHTML = counter + "%";
-     }
-
-     }, 20)
-          </script>
-    
+ 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    
 </body>
 </html>
