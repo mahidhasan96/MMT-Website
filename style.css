@@ -78,6 +78,7 @@ h6{
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
+  height: 700px;
 
   
 }
@@ -392,10 +393,12 @@ h6{
    
     
   }
+
+ 
 .plane i{
     position: relative;
-    top: 42%;
-    left: 40%;
+    top: 40%;
+    left: 37%;
     font-size: 25px;
     transition-duration: 1000ms;
     transition-timing-function: ease;
@@ -407,7 +410,8 @@ h6{
 }
 .sub{
     color: #282C22;
-    padding-top: 10px;
+    margin-top: 15px;
+    margin-left: 25px;
 }
 .subsection{
     background-color: #F1F1F1;
@@ -689,7 +693,6 @@ table input[type="radio"] {
 
 .subcribe{
     margin-top: 50px;
-    margin-bottom: ;
     background: black;
     height: 350px;
 }
@@ -746,4 +749,30 @@ table input[type="radio"] {
 .footer{
     text-align: center;
     color: rgba(245, 178, 178, 0.7);
+}
+.login{
+    width: 300px;
+    height: 200px;
+    background: #808080;
+    align-items: center;
+    margin: 100px auto;
+    border-radius: 6px;
+}
+.login input[type="text"], [type="password"]{
+    outline: none;
+    padding: 10px 15px;
+    margin: 5px 10px;
+    font-size: 20px;
+    background: #282C22;
+    color: #3bb300;
+    border-radius: 6px;
+    
+}
+.login input[type="submit"]{
+    padding: 8px 15px;
+    margin-left: 100px;
+    background: darkblue;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
 }
