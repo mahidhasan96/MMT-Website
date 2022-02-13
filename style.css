@@ -629,11 +629,36 @@ table{
     margin-left: 45px;
     background: #282C22;
     color: palegreen;
+    height: 300px;
+    
+    
 }
-table input[type="text"], [type="password"], [type="email"],[type="phone"]{
+table input[type="password"]{
     outline: none;
     border: none;
-    padding: 10px;
+    padding: 5px;
+    margin: 5px 10px;
+    font-size: 20px;
+    background: black;
+    color: #3bb300;
+    border-radius: 6px;
+    
+}
+table input[type="text"]{
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin: 5px 10px;
+    font-size: 20px;
+    background: black;
+    color: #3bb300;
+    border-radius: 6px;
+    
+}
+table input[type="email"]{
+    outline: none;
+    border: none;
+    padding: 5px;
     margin: 5px 10px;
     font-size: 20px;
     background: black;
@@ -643,7 +668,8 @@ table input[type="text"], [type="password"], [type="email"],[type="phone"]{
 }
 table input[type="submit"] {
     position: relative;
-    left: 160%;
+    margin-left: 200%;
+    margin-top: 5px;
     padding: 5px;
 }
 
@@ -688,7 +714,7 @@ table input[type="submit"] {
 .subcribe{
     margin-top: 50px;
     background: black;
-    height: 350px;
+   
 }
 .subcribe h3{
     padding-left: 20px;
