@@ -42,7 +42,7 @@ h6{
     
 }
 .navbar{
-    font-size: 12px;
+    font-size: 15px;
    
     
 }
@@ -56,6 +56,7 @@ h6{
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:active{
     color: coral;
+    border-bottom: 2px solid red;
 }
 
 #navbarSupportedContent > ul{
@@ -409,9 +410,11 @@ h6{
 
 }
 .sub{
-    color: #282C22;
-    margin-top: 15px;
+    color: #22252c;
+    margin-top: 13px;
     margin-left: 25px;
+    text-align: center;
+    
 }
 .subsection{
     background-color: #F1F1F1;
@@ -766,10 +769,7 @@ table input[type="submit"] {
     transition: 0.3s ease-in-out;
 }
 
-.footer{
-    text-align: center;
-    color: rgba(245, 178, 178, 0.7);
-}
+
 .login{
     width: 300px;
     height: 200px;
@@ -795,4 +795,11 @@ table input[type="submit"] {
     color: white;
     font-size: 14px;
     cursor: pointer;
+}
+
+
+.footer{
+    text-align: center;
+    color: rgba(245, 178, 178, 0.7);
+    font-size: 12PX;
 }
